@@ -1,0 +1,12 @@
+diff --git a/src/mpegvolume.c b/src/mpegvolume.c
+index 1234567..abcdefg 100644
+--- a/src/mpegvolume.c
++++ b/src/mpegvolume.c
+@@ -175,6 +175,7 @@ signal_max_power_mp3(char *filename, struct signal_info *si)
+   ds.eof = 0;
+   ds.windowsz = 0;
+   ds.samples_so_far = 0;
++  ds.maxpow = 0.0;
+   /* initialize peaks to effectively -inf and +inf */
+   si->max_sample = samplemin;
+   si->min_sample = samplemax;
